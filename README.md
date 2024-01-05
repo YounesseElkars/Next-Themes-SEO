@@ -1,3 +1,10 @@
+## Goals
+
+- [ ] Static Blog With Markdown
+- [ ] Filtring posts by category
+- [ ] Optimizing for SEO
+- [ ] Optimizing the UI Experience
+
 ## Configuration
 
 - [x] Nextjs 14
