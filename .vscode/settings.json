@@ -1,0 +1,12 @@
+{
+  // install the Tailwind CSS IntelliSense extension for VSCode to make it work
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // format on save
+  "editor.formatOnSave": true
+  /* if you cant install the extenstion you can simply ignore the rules
+    "scss.lint.unknownAtRules": "ignore",
+    "css.lint.unknownAtRules": "ignore"
+  */
+}
