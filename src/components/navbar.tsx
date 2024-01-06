@@ -10,7 +10,7 @@ type NavbarProps = {};
 const Navbar: FC<NavbarProps> = ({}) => {
   const pathname = usePathname();
   return (
-    <div className="mt-4 flex h-16 w-full flex-row items-center justify-between rounded-md bg-purple-900/10 px-4">
+    <div className="mt-4 flex h-auto w-full flex-row items-center justify-between rounded-md bg-blue-900/10 px-4 py-2">
       <div>
         <Link href="/">{pathname == '/' ? <Home /> : <CornerDownLeft />}</Link>
       </div>
