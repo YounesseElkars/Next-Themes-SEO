@@ -1,4 +1,4 @@
-import Bio from '@/components/bio';
+import Bio from '@/components/bio/bio';
 import Navbar from '@/components/navbar';
 import Container from '@/components/ui/container';
 
