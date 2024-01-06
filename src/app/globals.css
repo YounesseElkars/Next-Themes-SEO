@@ -74,3 +74,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media (min-width: 640px) {
+  .verticalText {
+    writing-mode: vertical-lr;
+  }
+}
+
+.gradiant-for-verical {
+  @apply bg-gradient-to-b from-purple-300 via-blue-500 to-blue-900 bg-clip-text text-transparent;
+}
