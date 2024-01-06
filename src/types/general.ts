@@ -18,3 +18,27 @@ export type PostMetaData = {
   category: string;
   slug: string;
 };
+
+export type PostProps = {
+  title: string;
+  subtitle: string;
+  date: string;
+  content: string;
+  image: string;
+};
+
+export type TPostCardDetails = {
+  title: string;
+  date: string;
+  subtitle: string;
+  slug: string;
+};
+
+export type TFullPost = {
+  title: string;
+  date: string;
+  subtitle: string;
+  slug: string;
+  content: string;
+  image: string;
+};
