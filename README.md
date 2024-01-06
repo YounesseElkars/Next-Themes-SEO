@@ -6,12 +6,11 @@
 
 - [x] Navbar
 - [x] Bio
-- [ ] Post Cards Section
-- [ ] Select Categories
-- [ ] Full Post Page
-- [ ] static generation based on the markdown files
+- [x] Post Cards Section
+- [x] Full Post Page
+- [x] static generation based on the markdown files
 - [ ] Make the design even better
-- [ ] Improve the seo
+- [ ] Improve the SEO
 
 ## Configuration
 
