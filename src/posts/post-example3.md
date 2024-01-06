@@ -1,8 +1,8 @@
 ---
 title: 'Post Example 3'
 subtitle: 'Post Example Description'
-date: '2024-01-02'
-category: 'science'
+date: '2024-01-01'
+image: '/images/cover2.jpg'
 ---
 
 ## dummy text of the printing
