@@ -4,10 +4,14 @@
 
 ## Goals
 
-- [ ] Static Blog With Markdown
-- [ ] Filtring posts by category
-- [ ] Optimizing for SEO
-- [ ] Optimizing the UI Experience
+- [x] Navbar
+- [x] Bio
+- [ ] Post Cards Section
+- [ ] Select Categories
+- [ ] Full Post Page
+- [ ] static generation based on the markdown files
+- [ ] Make the design even better
+- [ ] Improve the seo
 
 ## Configuration
 
