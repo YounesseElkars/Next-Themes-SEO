@@ -14,6 +14,7 @@ export type ProfileSettingProps = {
   metaDescription: string;
   metaGraphImage: TImageLink;
   metaKeywords: string[];
+  metadataBase: URL;
 };
 
 export type TFullPost = {

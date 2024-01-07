@@ -13,4 +13,8 @@ export const profileSetting: ProfileSettingProps = {
   metaDescription: 'This is my Coding Blog',
   metaGraphImage: '/images/flower.jpeg',
   metaKeywords: ['Next.js', 'React', 'JavaScript'],
+  metadataBase:
+    process.env.NODE_ENV === 'development'
+      ? new URL('http://localhost:3000')
+      : new URL('https://chimerical-sunflower-d85864.netlify.app'),
 };
