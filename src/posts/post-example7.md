@@ -1,5 +1,5 @@
 ---
-title: 'Post Example 4'
+title: 'Post Example 7'
 subtitle: 'Post Example Description'
 date: '2024-01-01'
 image: '/images/camera2.jpg'
