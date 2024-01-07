@@ -4,6 +4,7 @@ subtitle: 'Post Example Description'
 date: '2024-01-01'
 image: '/images/camera1.jpeg'
 imageAlt: 'camera image'
+seoMetaDescription: 'If you are old enough to remember the analogue film camera era, chances are it is'
 ---
 
 ## What is a Medium Format Camera?
