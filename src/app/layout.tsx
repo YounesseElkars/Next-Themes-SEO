@@ -9,7 +9,13 @@ import { profileSetting } from '@/config/profile';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const metadataBase =
+  process.env.NODE_ENV === 'development'
+    ? new URL('http://localhost:3000')
+    : new URL('https://chimerical-sunflower-d85864.netlify.app');
+
 export const metadata: Metadata = {
+  metadataBase: metadataBase,
   title: profileSetting.metaTitle,
   description: profileSetting.metaDescription,
   keywords: profileSetting.metaKeywords,
