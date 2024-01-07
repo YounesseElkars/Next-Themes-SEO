@@ -3,6 +3,7 @@ title: 'Post Example 2'
 subtitle: 'Post Example Description'
 date: '2024-01-01'
 image: '/images/camera2.jpeg'
+imageAlt: 'camera image'
 ---
 
 ## What is a Folding Camera?
