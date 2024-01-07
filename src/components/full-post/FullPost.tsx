@@ -20,9 +20,9 @@ const FullPost: FC<PostProps> = ({ title, subtitle, date, content, image }) => {
       <div className="mb-6 text-base font-normal text-gray-500">{subtitle}</div>
       <div className={`${bitter.className} mb-2 text-xs  text-gray-500`}>{date}</div>
       <Image src={image} height={1000} width={1000} className="w-full" alt="Post Image" />
-      <div className="my-12">
+      <article className="  prose dark:prose-light my-12  text-foreground">
         <Markdown>{content}</Markdown>
-      </div>
+      </article>
     </div>
   );
 };
