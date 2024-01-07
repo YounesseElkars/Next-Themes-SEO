@@ -6,7 +6,7 @@ type PostCardProps = { date: string; title: string; slug: string; subtitle: stri
 
 const PostCard: FC<PostCardProps> = ({ date, title, subtitle, slug }) => {
   return (
-    <Link href={`/` + slug}>
+    <Link aria-label={title + ' - Article'} href={`/` + slug}>
       <Card>
         <CardHeader>
           <CardDescription>{date}</CardDescription>

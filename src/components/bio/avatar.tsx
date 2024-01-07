@@ -10,7 +10,7 @@ type AvatarBioProps = {
 const AvatarBio: FC<AvatarBioProps> = ({ link, name }) => {
   return (
     <Avatar>
-      <AvatarImage src={link} />
+      <AvatarImage src={link} alt="Author Photo" />
       <AvatarFallback>
         <div className="flex h-full w-full items-center justify-center text-[0.5rem]">{name}</div>
       </AvatarFallback>
