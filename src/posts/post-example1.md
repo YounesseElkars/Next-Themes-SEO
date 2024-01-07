@@ -14,6 +14,8 @@ Another fact worth remembering is that a roll of 120 film contains around the sa
 
 ## Why shoot a Medium Format Camera?
 
+![Alt Image](/images/camera1.jpeg)
+
 Back to the best medium format film camera. The main reason for using it is the size of the negatives. They are larger even than the sensors in modern digital medium format cameras. This means you can capture a much more detail and create far larger images than you can with even a full frame digital sensor. What if you are just taking photographs to share on Instagram? Another benefit is that the lenses naturally have a longer focal length. A consequence of this is that for the same field of vision, you get a shallower depth of field. Depth-of-field is just a measure of how much of the photograph is in focus. For a portrait, you might just want to have the eyes in focus, to bring attention to them and have hair and the background blurred. This effect is much easier to achieve with a medium format camera.
 
 The final advantage I will mention here is that even using the same film stock (e.g. Ilford Delta 100, [Fuji Acros II](https://parallaxphotographic.coop/fuji-acros-100-ii-film-review/) or Kodak Portra 400), medium format can have a different look and feel to 35 mm. That said, you will need to experiment with different films to find which ones best suits your aesthetic.
