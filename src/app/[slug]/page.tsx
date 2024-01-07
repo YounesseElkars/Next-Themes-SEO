@@ -23,6 +23,7 @@ const getPostContent = (slug: string): TFullPost => {
     title: matterResult.data.title,
     subtitle: matterResult.data.subtitle,
     image: matterResult.data.image,
+    seoMetaDescription: matterResult.data.seoMetaDescription,
   };
 };
 
@@ -32,14 +33,14 @@ export async function generateMetadata({ params }: params, parent: ResolvingMeta
   const content = getPostContent(slug);
 
   const title = content?.title;
-  const subtitle = content?.subtitle;
+  const seoMetaDescription = content?.seoMetaDescription;
   const image = content?.image;
 
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
     title: title,
-    description: subtitle,
+    description: seoMetaDescription,
     openGraph: {
       images: [image],
       ...previousImages,
@@ -68,6 +69,7 @@ const page = ({ params }: params) => {
         title={content.title}
         image={content.image}
         content={content.content}
+        seoMetaDescription={content.seoMetaDescription}
       />
     </div>
   );

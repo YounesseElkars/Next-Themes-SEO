@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: profileSetting.metaTitle,
   description: profileSetting.metaDescription,
+  keywords: profileSetting.metaKeywords,
   openGraph: {
     images: [profileSetting.metaGraphImage],
   },

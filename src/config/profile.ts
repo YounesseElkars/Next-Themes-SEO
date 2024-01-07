@@ -12,4 +12,5 @@ export const profileSetting: ProfileSettingProps = {
   metaTitle: 'My Awesome Blog',
   metaDescription: 'This is my Coding Blog',
   metaGraphImage: '/images/flower.jpeg',
+  metaKeywords: ['Next.js', 'React', 'JavaScript'],
 };

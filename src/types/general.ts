@@ -13,6 +13,7 @@ export type ProfileSettingProps = {
   metaTitle: string;
   metaDescription: string;
   metaGraphImage: TImageLink;
+  metaKeywords: string[];
 };
 
 export type TFullPost = {
@@ -23,6 +24,7 @@ export type TFullPost = {
   content: string;
   image: TImageLink;
   imageAlt: string;
+  seoMetaDescription: string;
 };
 
 export type TPostCardDetails = Omit<TFullPost, 'content' | 'image'>;
