@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { FC } from 'react';
-import Markdown from 'markdown-to-jsx';
+import ReactMarkdown from 'react-markdown';
 
 import { Bitter } from 'next/font/google';
 import { TFullPostPage } from '@/types/general';
@@ -20,10 +20,32 @@ const FullPost: FC<TFullPostPage> = ({ title, subtitle, date, content, image, im
       <div className={`${bitter.className} mb-2 text-xs `}>{date}</div>
       <Image src={image} height={1000} width={1000} className="w-full" alt={imageAlt} />
       <article className="  prose my-12 text-foreground  dark:prose-light">
-        <Markdown>{content}</Markdown>
+        <ReactMarkdown
+          components={{
+            img: ({ src, alt }) => <Image src={src as string} alt={alt as string} width={1200} height={200} />,
+          }}
+        >
+          {content}
+        </ReactMarkdown>
       </article>
     </div>
   );
 };
+
+/*
+
+  <ReactMarkdown
+    className={markdownStyles['markdown']}
+    components={{
+      img: (props) => (
+        <Image src={props.src} alt={props.alt} width={1200} height={200} />
+      ),
+    }}
+  >
+    {content}
+  </ReactMarkdown>
+  
+  
+  */
 
 export default FullPost;
