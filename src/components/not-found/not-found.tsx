@@ -9,7 +9,7 @@ const NotFound = () => {
       <h3 className="text-2xl text-foreground">404 - Not Found</h3>
       <p className="text-md text-foreground/60">Could not find requested resource</p>
       <Image src="/not-found.png" height={1000} width={1000} alt="404 Error Not Found Image" className="w-72" />
-      <Link aria-label="Home" href="/">
+      <Link aria-label="Home" href="/" as="/">
         <Button variant="default">Return Home</Button>
       </Link>
     </div>
