@@ -9,8 +9,9 @@
 - [x] Post Cards Section
 - [x] Full Post Page
 - [x] static generation based on the markdown files
-- [ ] Make the design even better
-- [ ] Improve the SEO
+- [x] Make the design even better
+- [x] Improve the SEO
+- [ ] Need to put more goals
 
 ## Configuration
 
