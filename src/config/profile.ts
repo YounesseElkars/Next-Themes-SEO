@@ -9,4 +9,7 @@ export const profileSetting: ProfileSettingProps = {
   instagram: 'https://instagram.com',
   twiter: 'https://twitter.com',
   linkedin: 'https://linkedin.com',
+  metaTitle: 'My Awesome Blog',
+  metaDescription: 'This is my Coding Blog',
+  metaGraphImage: '/images/flower.jpeg',
 };

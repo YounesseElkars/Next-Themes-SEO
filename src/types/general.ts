@@ -1,4 +1,5 @@
 export type TLink = `http://${string}` | `https://${string}`;
+export type TImageLink = `/${string}` | `http://${string}` | `https://${string}`;
 
 export type ProfileSettingProps = {
   myname: string;
@@ -9,6 +10,9 @@ export type ProfileSettingProps = {
   instagram: TLink;
   twiter: TLink;
   linkedin: TLink;
+  metaTitle: string;
+  metaDescription: string;
+  metaGraphImage: TImageLink;
 };
 
 export type TFullPost = {
@@ -17,7 +21,7 @@ export type TFullPost = {
   subtitle: string;
   slug: string;
   content: string;
-  image: string;
+  image: TImageLink;
   imageAlt: string;
 };
 

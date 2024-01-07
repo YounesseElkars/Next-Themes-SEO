@@ -4,15 +4,11 @@ import FullPost from '@/components/full-post/FullPost';
 import React from 'react';
 import { TFullPost } from '@/types/general';
 import { getPostDetails } from '@/components/post-cards/postCards';
+import { Metadata, ResolvingMetadata } from 'next';
 
 export const dynamicParams = false;
 
-export const generateStaticParams = async () => {
-  const posts = getPostDetails();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-};
+type params = { params: { slug: string } };
 
 const getPostContent = (slug: string): TFullPost => {
   const fileLocation = `./src/posts/${slug}.md`;
@@ -30,7 +26,35 @@ const getPostContent = (slug: string): TFullPost => {
   };
 };
 
-const page = ({ params }: { params: { slug: string } }) => {
+export async function generateMetadata({ params }: params, parent: ResolvingMetadata): Promise<Metadata> {
+  const slug = params.slug;
+
+  const content = getPostContent(slug);
+
+  const title = content?.title;
+  const subtitle = content?.subtitle;
+  const image = content?.image;
+
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: title,
+    description: subtitle,
+    openGraph: {
+      images: [image],
+      ...previousImages,
+    },
+  };
+}
+
+export const generateStaticParams = async () => {
+  const posts = getPostDetails();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+};
+
+const page = ({ params }: params) => {
   const slug = params.slug;
 
   const content = getPostContent(slug);
