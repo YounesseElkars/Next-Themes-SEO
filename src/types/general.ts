@@ -11,29 +11,6 @@ export type ProfileSettingProps = {
   linkedin: TLink;
 };
 
-export type PostMetaData = {
-  title: string;
-  subtitle: string;
-  date: Date;
-  category: string;
-  slug: string;
-};
-
-export type PostProps = {
-  title: string;
-  subtitle: string;
-  date: string;
-  content: string;
-  image: string;
-};
-
-export type TPostCardDetails = {
-  title: string;
-  date: string;
-  subtitle: string;
-  slug: string;
-};
-
 export type TFullPost = {
   title: string;
   date: string;
@@ -42,3 +19,7 @@ export type TFullPost = {
   content: string;
   image: string;
 };
+
+export type TPostCardDetails = Omit<TFullPost, 'content' | 'image'>;
+
+export type TFullPostPage = Omit<TFullPost, 'slug'>;

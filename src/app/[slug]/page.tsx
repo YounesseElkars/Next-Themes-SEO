@@ -1,9 +1,8 @@
 import fs from 'fs';
-import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import FullPost from '@/components/full-post/FullPost';
 import React from 'react';
-import { TFullPost, TPostCardDetails } from '@/types/general';
+import { TFullPost } from '@/types/general';
 import { getPostDetails } from '@/components/post-cards/postCards';
 
 export const generateStaticParams = async () => {
