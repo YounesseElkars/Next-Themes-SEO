@@ -5,6 +5,8 @@ import React from 'react';
 import { TFullPost } from '@/types/general';
 import { getPostDetails } from '@/components/post-cards/postCards';
 
+export const dynamicParams = false;
+
 export const generateStaticParams = async () => {
   const posts = getPostDetails();
   return posts.map((post) => ({
