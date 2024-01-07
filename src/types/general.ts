@@ -18,6 +18,7 @@ export type TFullPost = {
   slug: string;
   content: string;
   image: string;
+  imageAlt: string;
 };
 
 export type TPostCardDetails = Omit<TFullPost, 'content' | 'image'>;
