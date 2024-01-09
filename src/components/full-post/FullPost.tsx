@@ -32,20 +32,4 @@ const FullPost: FC<TFullPostPage> = ({ title, subtitle, date, content, image, im
   );
 };
 
-/*
-
-  <ReactMarkdown
-    className={markdownStyles['markdown']}
-    components={{
-      img: (props) => (
-        <Image src={props.src} alt={props.alt} width={1200} height={200} />
-      ),
-    }}
-  >
-    {content}
-  </ReactMarkdown>
-  
-  
-  */
-
 export default FullPost;
