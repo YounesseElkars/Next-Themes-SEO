@@ -14,10 +14,5 @@ phases:
       - npm run build
 
 artifacts:
-<<<<<<< HEAD
-  files: '/out/**/*'
-  discard-paths: yes
-=======
   files: '**/*'
   base-directory: 'out'
->>>>>>> 72dbb03 (aws build and deploy : adding buildspec.yml)
