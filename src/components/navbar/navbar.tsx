@@ -12,7 +12,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <div className="mt-4 flex h-auto w-full flex-row items-center justify-between rounded-md bg-blue-900/10 px-4 py-2">
       <div>
-        <Link aria-label="Home" href="/" as="/">
+        <Link aria-label="Home" href="/">
           {pathname == '/' ? <Home /> : <CornerDownLeft />}
         </Link>
       </div>

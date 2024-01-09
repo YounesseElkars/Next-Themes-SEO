@@ -6,8 +6,6 @@ import { TFullPost } from '@/types/general';
 import { getPostDetails } from '@/components/post-cards/postCards';
 import { Metadata, ResolvingMetadata } from 'next';
 
-export const dynamicParams = false;
-
 type params = { params: { slug: string } };
 
 const getPostContent = (slug: string): TFullPost => {
