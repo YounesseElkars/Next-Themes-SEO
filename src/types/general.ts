@@ -28,6 +28,6 @@ export type TFullPost = {
   seoMetaDescription: string;
 };
 
-export type TPostCardDetails = Omit<TFullPost, 'content' | 'image' | 'imageAlt' | 'seoMetaDescription'>;
+export type TPostCard = Omit<TFullPost, 'content' | 'image' | 'imageAlt' | 'seoMetaDescription'>;
 
-export type TFullPostPage = Omit<TFullPost, 'slug'>;
+export type TPost = Omit<TFullPost, 'slug' | 'seoMetaDescription'>;
