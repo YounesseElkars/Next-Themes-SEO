@@ -1,4 +1,4 @@
-import React, { FC, HtmlHTMLAttributes } from 'react';
+import React, { FC } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import SocialLink from './social-link';
 import AvatarBio from './avatar';
