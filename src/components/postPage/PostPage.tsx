@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import React, { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
-
 import { Bitter } from 'next/font/google';
-import { TFullPostPage } from '@/types/general';
+import { TPost } from '@/types/general';
 
 const bitter = Bitter({
   weight: '200',
@@ -12,7 +11,7 @@ const bitter = Bitter({
   display: 'swap',
 });
 
-const FullPost: FC<TFullPostPage> = ({ title, subtitle, date, content, image, imageAlt }) => {
+const PostPage: FC<TPost> = ({ title, subtitle, date, content, image, imageAlt }) => {
   return (
     <div className="flex flex-col  ">
       <div className="my-12 text-6xl font-normal">{title}</div>
@@ -32,4 +31,4 @@ const FullPost: FC<TFullPostPage> = ({ title, subtitle, date, content, image, im
   );
 };
 
-export default FullPost;
+export default PostPage;

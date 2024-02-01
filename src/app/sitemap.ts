@@ -1,9 +1,9 @@
-import { getPostDetails } from '@/components/post-cards/postCards';
 import { profileSetting } from '@/config/profile';
+import { getPostCardsHandler } from '@/handlers/getPostsDetailsHandler';
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = getPostDetails();
+  const posts = getPostCardsHandler();
   const allDynamicPaths: MetadataRoute.Sitemap = posts.map((post) => {
     return {
       url: `${profileSetting.metadataBase}${post.slug}`,
