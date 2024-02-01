@@ -14,6 +14,8 @@
 - [x] Improve the SEO
 - [ ] multi categories
 - [ ] add two themes
+- [ ] optimize rendring
+- [ ] write tests
 
 ## Configuration
 
