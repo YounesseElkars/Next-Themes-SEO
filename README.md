@@ -1,9 +1,10 @@
 ## Demo
 
-- Online demo : [https://chimerical-sunflower-d85864.netlify.app](https://chimerical-sunflower-d85864.netlify.app)
+- Online demo : Migrating to cloudfront/s3
 
 ## Goals
 
+- [x] DarkMode
 - [x] Navbar
 - [x] Bio
 - [x] Post Cards Section
@@ -11,7 +12,8 @@
 - [x] static generation based on the markdown files
 - [x] Make the design even better
 - [x] Improve the SEO
-- [ ] Need to put more goals
+- [ ] multi categories
+- [ ] add two themes
 
 ## Configuration
 
