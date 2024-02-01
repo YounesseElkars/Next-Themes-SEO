@@ -4,14 +4,12 @@ import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = getPostCardsHandler();
-  const allDynamicPaths: MetadataRoute.Sitemap = posts.map((post) => {
-    return {
-      url: `${profileSetting.metadataBase}${post.slug}`,
-      lastModified: post.date,
-      changeFrequency: 'monthly',
-      priority: 1,
-    };
-  });
+  const allDynamicPaths: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${profileSetting.metadataBase}${post.slug}`,
+    lastModified: post.date,
+    changeFrequency: 'monthly',
+    priority: 1,
+  }));
 
   return [
     ...allDynamicPaths,
