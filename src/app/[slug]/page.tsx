@@ -1,29 +1,10 @@
-import fs from 'fs';
-import matter from 'gray-matter';
 import FullPost from '@/components/full-post/FullPost';
 import React from 'react';
-import { TFullPost } from '@/types/general';
-import { getPostDetails } from '@/components/post-cards/postCards';
 import { Metadata, ResolvingMetadata } from 'next';
+import { getPostCardsHandler } from '@/handlers/getPostsDetailsHandler';
+import { getPostContent } from '@/handlers/getPostContentHandler';
 
 type params = { params: { slug: string } };
-
-const getPostContent = (slug: string): TFullPost => {
-  const fileLocation = `./src/posts/${slug}.md`;
-  const file = fs.readFileSync(fileLocation, 'utf-8');
-  const matterResult = matter(file);
-
-  return {
-    imageAlt: matterResult.data.imageAlt,
-    slug: matterResult.data.slug,
-    content: matterResult.content,
-    date: matterResult.data.date,
-    title: matterResult.data.title,
-    subtitle: matterResult.data.subtitle,
-    image: matterResult.data.image,
-    seoMetaDescription: matterResult.data.seoMetaDescription,
-  };
-};
 
 export async function generateMetadata({ params }: params, parent: ResolvingMetadata): Promise<Metadata> {
   const slug = params.slug;
@@ -47,7 +28,7 @@ export async function generateMetadata({ params }: params, parent: ResolvingMeta
 }
 
 export const generateStaticParams = async () => {
-  const posts = getPostDetails();
+  const posts = getPostCardsHandler();
   return posts.map((post) => ({
     slug: post.slug,
   }));
