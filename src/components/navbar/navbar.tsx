@@ -4,6 +4,7 @@ import { SwitchDark } from './switchDark';
 import { CornerDownLeft, Home } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import NavLink from './NavLink';
 
 type NavbarProps = {};
 
@@ -15,6 +16,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <Link aria-label="Home" href="/">
           {pathname == '/' ? <Home /> : <CornerDownLeft />}
         </Link>
+      </div>
+      <div className="flex">
+        <NavLink label="About" link="/about" />
       </div>
       <div>
         <SwitchDark />
