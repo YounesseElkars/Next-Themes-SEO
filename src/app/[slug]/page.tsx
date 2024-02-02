@@ -1,15 +1,14 @@
-import PostPage from '@/components/postPage/PostPage';
 import React from 'react';
 import { Metadata, ResolvingMetadata } from 'next';
-import { getPostCardsHandler } from '@/handlers/getPostsDetailsHandler';
-import { getPostContent } from '@/handlers/getPostContentHandler';
+import { fullArticleHandler, getAllArticles } from '@/handlers/postsHandler';
 import { TFullPost } from '@/types/general';
+import { FullArticle } from '@/components/posts/posts';
 
 type params = { params: { slug: TFullPost['slug'] } };
 
 export async function generateMetadata({ params }: params, parent: ResolvingMetadata): Promise<Metadata> {
   const slug = params.slug;
-  const content = getPostContent(slug);
+  const content = fullArticleHandler(slug);
   const { title, seoMetaDescription, image } = content;
   const previousImages = (await parent).openGraph?.images || [];
   return {
@@ -23,7 +22,7 @@ export async function generateMetadata({ params }: params, parent: ResolvingMeta
 }
 
 export const generateStaticParams = async () => {
-  const posts = getPostCardsHandler();
+  const posts = getAllArticles();
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -31,11 +30,13 @@ export const generateStaticParams = async () => {
 
 const page = ({ params }: params) => {
   const slug = params.slug;
-  const content = getPostContent(slug);
+  const content = fullArticleHandler(slug);
 
   return (
     <div className=" mt-4  h-auto w-full gap-4  rounded-md bg-blue-900/10 px-4 py-2  sm:grid-cols-2  sm:flex-row lg:grid-cols-3">
-      <PostPage
+      <FullArticle
+        slug={content.slug}
+        seoMetaDescription={content.seoMetaDescription}
         imageAlt={content.imageAlt}
         date={content.date}
         subtitle={content.subtitle}
