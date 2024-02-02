@@ -1,12 +1,12 @@
 import { profileSetting } from '@/config/profile';
-import { getPostCardsHandler } from '@/handlers/getPostsDetailsHandler';
+import { getFeaturedArticlesCards } from '@/handlers/postsHandler';
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = getPostCardsHandler();
+  const posts = getFeaturedArticlesCards();
   const allDynamicPaths: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${profileSetting.metadataBase}${post.slug}`,
-    lastModified: post.date,
+    lastModified: '01-01-2020',
     changeFrequency: 'monthly',
     priority: 1,
   }));
