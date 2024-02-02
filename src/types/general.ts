@@ -1,5 +1,6 @@
 export type TLink = `http://${string}` | `https://${string}`;
-export type TImageLink = `/${string}` | `http://${string}` | `https://${string}`;
+export type TImageLink = `./${string}` | `/${string}` | `http://${string}` | `https://${string}`;
+export type TLinkPath = `/${string}`;
 
 export type ProfileSettingProps = {
   myname: string;
@@ -28,6 +29,21 @@ export type TFullPost = {
   seoMetaDescription: string;
 };
 
-export type TPostCard = Omit<TFullPost, 'content' | 'image' | 'imageAlt' | 'seoMetaDescription'>;
+export type TFeaturedArticlesCards = Omit<TFullPost, 'content' | 'seoMetaDescription' | 'date'>;
 
-export type TPost = Omit<TFullPost, 'slug' | 'seoMetaDescription'>;
+export type TAllArticles = Omit<TFullPost, 'content' | 'seoMetaDescription' | 'date'>;
+
+export type TCategoryCard = {
+  categoryName: string;
+  categoryImg: TImageLink;
+  categoryImgAlt: string;
+  categorySlug: string;
+};
+
+export type TArticlesCardsByCategory = {
+  title: string;
+  subtitle: string;
+  slug: string;
+  image: TImageLink;
+  imageAlt: string;
+};
