@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export",
+    "export": "next build && next export && npx serve@latest out",
     "start": "next start",
+    "start:static": "npx serve@latest out",
     "lint": "next lint"
   },
   "dependencies": {
