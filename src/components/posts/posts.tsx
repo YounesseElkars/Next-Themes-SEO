@@ -2,10 +2,11 @@ import React from 'react';
 import PostCard from '../ui/postCard';
 import { TFeaturedArticlesCards, TFullPost } from '@/types/general';
 import { ShowArticlesCardsByCategory, getFeaturedArticlesCards } from '@/handlers/postsHandler';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Bitter } from 'next/font/google';
+import ExportedImage from 'next-image-export-optimizer';
 
 const bitter = Bitter({
   weight: '200',
@@ -64,11 +65,11 @@ export const FullArticle: FC<TFullPost> = ({ title, subtitle, date, content, ima
       <div className="my-12 text-6xl font-normal">{title}</div>
       <div className="mb-6 text-base font-normal">{subtitle}</div>
       <div className={`${bitter.className} mb-2 text-xs `}>{date}</div>
-      <Image src={image} height={1000} width={1000} className="w-full" alt={imageAlt} />
+      <ExportedImage src={image} height={1000} width={1000} className="w-full" alt={imageAlt} />
       <article className="  prose my-12 text-foreground  dark:prose-light">
         <ReactMarkdown
           components={{
-            img: ({ src, alt }) => <Image src={src as string} alt={alt as string} width={1200} height={200} />,
+            img: ({ src, alt }) => <ExportedImage src={src as string} alt={alt as string} width={1200} height={200} />,
           }}
         >
           {content}
