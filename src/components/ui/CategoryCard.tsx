@@ -8,7 +8,13 @@ const Category: FC<TCategoryCard> = ({ categoryImg, categoryImgAlt, categoryName
   return (
     <Link aria-label={categoryName + ' - Category'} href={`/category/` + categorySlug}>
       <div className="relative h-auto w-72 transform rounded-md transition-transform hover:scale-105 focus:border-blue-300 focus:ring ">
-        <ExportedImage src={categoryImg} height="100" width="100" alt={categoryImgAlt} className="w-full rounded-md " />
+        <ExportedImage
+          src={categoryImg}
+          height="100"
+          width="100"
+          alt={categoryImgAlt}
+          className="h-48 w-full rounded-md"
+        />
         <div className="bg absolute bottom-2 left-2 cursor-pointer select-none  rounded-md bg-blue-900/80 p-2 text-slate-300 hover:text-slate-50 ">
           <div className="text-base">{categoryName}</div>
         </div>
