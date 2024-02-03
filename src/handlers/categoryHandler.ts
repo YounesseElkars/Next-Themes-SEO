@@ -7,7 +7,7 @@ export function getAllCategoriesCards(): TCategoryCard[] {
   return categories.map((cat) => {
     return {
       categoryName: cat,
-      categoryImg: `/categories/${cat}.png`,
+      categoryImg: `/images/${cat}.png`,
       categoryImgAlt: cat,
       categorySlug: cat,
     };
