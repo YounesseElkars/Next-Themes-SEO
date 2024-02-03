@@ -9,7 +9,7 @@ export const ShowAllCategoriesCards = () => {
     <>
       <h2 className="my-5 font-bold">Featured Categories</h2>
       <div className="mt-4 grid h-auto w-full grid-cols-1   gap-4  rounded-md   px-4 py-2  sm:grid-cols-2  sm:flex-row lg:grid-cols-3">
-        {categoriesCards.map(async (data, index) => (
+        {categoriesCards.map((data, index) => (
           <Category
             key={index}
             categorySlug={data.categorySlug}
