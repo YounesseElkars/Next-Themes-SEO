@@ -1,6 +1,6 @@
 ## Demo
 
-- Online demo : Migrating to cloudfront/s3
+- Online demo : [https://dcxtivbm7nals.cloudfront.net/](https://dcxtivbm7nals.cloudfront.net/)
 
 ## Goals
 
@@ -12,10 +12,10 @@
 - [x] static generation based on the markdown files
 - [x] Make the design even better
 - [x] Improve the SEO
-- [ ] multi categories
-- [ ] add two themes
-- [ ] optimize rendring
-- [ ] write tests
+- [x] multi categories
+- [ ] change the theme to a minimal one
+- [ ] make the theme switchable
+- [ ] add a second theme
 
 ## Configuration
 
