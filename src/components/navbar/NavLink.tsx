@@ -1,22 +1,25 @@
 import { TLinkPath } from '@/types/general';
 import React, { FC } from 'react';
-import { Button } from '../ui/button';
+
 import Link from 'next/link';
 
 type TNavlink = {
   link: TLinkPath;
   label: string;
+  type: 'normal' | 'title';
 };
 
-const NavLink: FC<TNavlink> = ({ label, link }) => {
+const NavLink: FC<TNavlink> = ({ label, link, type }) => {
   return (
-    <div>
-      <Button asChild variant="link">
-        <Link aria-label={label} href={link}>
-          {label}
-        </Link>
-      </Button>
-    </div>
+    <li
+      className={` m-2 list-none hover:underline  ${
+        type === 'title' ? `text-lg capitalize first-letter:text-xl first-letter:font-bold` : `text-xs`
+      }`}
+    >
+      <Link aria-label={label} href={link}>
+        {label}
+      </Link>
+    </li>
   );
 };
 
