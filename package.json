@@ -6,6 +6,7 @@
     "dev": "next-image-export-optimizer && next dev",
     "build": "next build && next-image-export-optimizer",
     "start": "next start",
+    "score": "npx --prefix ./score/unlighthouse unlighthouse --site localhost:3000",
     "start:static": "npx serve@latest out",
     "lint": "next lint"
   },
