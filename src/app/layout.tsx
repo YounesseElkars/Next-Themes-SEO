@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Underconstruction from './underconstruction';
 import { ThemeProvider } from '@/components/theme-provider';
-import Navbar from '@/components/navbar/navbar';
+import Navbar from '@/components/navbar/Navbar';
 import Container from '@/components/ui/container';
 import { profileSetting } from '@/config/profile';
 
@@ -31,7 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ) : (
             <>
               <Container>
-                <Navbar /> {children}
+                <Navbar />
+                {children}
               </Container>
             </>
           )}
