@@ -44,4 +44,4 @@ next-env.d.ts
 /public/images/next-image-export-optimizer-hashes.json
 
 # unlighthouse
-unlighthouse
+.unlighthouse
