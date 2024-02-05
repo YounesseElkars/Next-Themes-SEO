@@ -1,8 +1,8 @@
 ---
-title: 'Post Example 2'
+title: 'Post Example 7'
 subtitle: 'Post Example Description'
 date: '2024-01-01'
-image: '/images/Rectangle 5.png'
+image: '/images/Rectangle 5-1.png'
 imageAlt: 'camera image'
 seoMetaDescription: 'If you are old enough to remember the analogue film camera era, chances are it is'
 ---
