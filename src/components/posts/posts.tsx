@@ -17,19 +17,27 @@ const bitter = Bitter({
 
 export const FeaturedArticlesCards = () => {
   const postDetails: TFeaturedArticlesCards[] = getFeaturedArticlesCards();
+
   return (
     <>
-      <h2 className="my-5 font-bold">Featured Articles</h2>
-      <div className="mt-4 grid h-auto w-full grid-cols-1    gap-4  rounded-md   px-4 py-2  sm:grid-cols-2  sm:flex-row lg:grid-cols-3">
-        {postDetails.map((data, index) => (
+      <h2 className="my-8 text-4xl">Featured Articles</h2>
+      <div className="grid auto-rows-[200px] grid-cols-3">
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className={`row-span-1 rounded-xl p-4 ${i === 0 || i === 5 ? 'col-span-2' : ''}    ${
+              i === 2 ? 'row-span-2' : ''
+            } `}
+          >
           <PostCard
-            key={index}
-            title={data.title}
-            subtitle={data.subtitle}
-            slug={data.slug}
-            image={data.image}
-            imageAlt={data.imageAlt}
+              key={i}
+              title={postDetails[i].title}
+              subtitle={postDetails[i].subtitle}
+              slug={postDetails[i].slug}
+              image={postDetails[i].image}
+              imageAlt={postDetails[i].imageAlt}
           />
+          </div>
         ))}
       </div>
     </>
