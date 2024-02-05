@@ -48,10 +48,8 @@ export const ArticlesByCategory = ({ slug }: { slug: string }) => {
   const articles = ShowArticlesCardsByCategory(slug);
   return (
     <>
-      <h2 className="my-5  mt-4 h-auto w-full  gap-4 rounded-md bg-blue-900/10 px-4  py-2  font-bold sm:grid-cols-2 sm:flex-row lg:grid-cols-3">
-        All Categories - {slug}
-      </h2>
-      <div className="mt-4   grid   h-auto w-full   grid-cols-1     gap-4   rounded-md bg-blue-900/10 px-4  py-2    sm:grid-cols-2 sm:flex-row       lg:grid-cols-3">
+      <h2 className="my-8 text-4xl">{slug}</h2>
+      <div className="mt-4 grid h-auto w-full grid-cols-1 gap-10 rounded-md px-4 py-2 sm:grid-cols-2 sm:flex-row lg:grid-cols-4 ">
         {articles.map((data, index) => (
           <PostCard
             key={index}
