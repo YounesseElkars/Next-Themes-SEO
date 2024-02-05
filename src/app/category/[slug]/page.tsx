@@ -24,11 +24,7 @@ export const generateStaticParams = async () => {
 const page = ({ params }: params) => {
   const slug = params.slug;
 
-  return (
-    <div>
-      <ArticlesByCategory slug={slug} />
-    </div>
-  );
+  return <ArticlesByCategory slug={slug} />;
 };
 
 export default page;
