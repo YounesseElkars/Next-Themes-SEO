@@ -8,7 +8,6 @@ const CategoriesLinks = () => {
   const links = categoriesCards.map((data, index) => (
     <>
       <NavLink key={index} label={data.categoryName} link={`/category/${data.categorySlug}`} type="normal" />
-      <NavLink key={index} label={data.categoryName} link={`/category/${data.categorySlug}`} type="normal" />
     </>
   ));
 
