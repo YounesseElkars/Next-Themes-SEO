@@ -7,16 +7,18 @@ export const ShowAllCategoriesCards = () => {
   const categoriesCards = getAllCategoriesCards();
   return (
     <>
-      <h2 className="my-5 font-bold">Featured Categories</h2>
-      <div className="mt-4 grid h-auto w-full grid-cols-1   gap-4  rounded-md   px-4 py-2  sm:grid-cols-2  sm:flex-row lg:grid-cols-3">
-        {categoriesCards.map((data, index) => (
-          <Category
-            key={index}
-            categorySlug={data.categorySlug}
-            categoryImg={data.categoryImg}
-            categoryImgAlt={data.categoryImgAlt}
-            categoryName={data.categoryName}
-          />
+      <h2 className="my-8 text-4xl">All Categories</h2>
+      <div className="grid auto-rows-[200px] grid-cols-2">
+        {categoriesCards.map((_, i) => (
+          <div key={i} className={`row-span-1 rounded-xl p-4 ${i === 2 ? 'col-span-2' : ''} `}>
+            <Category
+              key={i}
+              categorySlug={categoriesCards[i].categorySlug}
+              categoryImg={categoriesCards[i].categoryImg}
+              categoryImgAlt={categoriesCards[i].categoryImgAlt}
+              categoryName={categoriesCards[i].categoryName}
+            />
+          </div>
         ))}
       </div>
     </>
