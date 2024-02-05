@@ -67,20 +67,24 @@ export const ArticlesByCategory = ({ slug }: { slug: string }) => {
 
 export const FullArticle: FC<TFullPost> = ({ title, subtitle, date, content, image, imageAlt }) => {
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col">
       <div className="my-12 text-6xl font-normal">{title}</div>
-      <div className="mb-6 text-base font-normal">{subtitle}</div>
-      <div className={`${bitter.className} mb-2 text-xs `}>{date}</div>
+      <div className=" mb-2 text-base font-normal">{subtitle}</div>
+      <div className={`${bitter.className} mb-12 text-xs `}>{date}</div>
       <ExportedImage src={image} height={1000} width={1000} className="w-full" alt={imageAlt} />
-      <article className="  prose my-12 text-foreground  dark:prose-light">
+      <div className="flex justify-center">
+        <article className="prose my-12   w-full  text-foreground dark:prose-light">
         <ReactMarkdown
           components={{
-            img: ({ src, alt }) => <ExportedImage src={src as string} alt={alt as string} width={1200} height={200} />,
+              img: ({ src, alt }) => (
+                <ExportedImage src={src as string} alt={alt as string} width={1200} height={200} />
+              ),
           }}
         >
           {content}
         </ReactMarkdown>
       </article>
+      </div>
     </div>
   );
 };
