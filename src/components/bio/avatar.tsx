@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/Avatar';
 import { TLink } from '@/types/general';
 
 type AvatarBioProps = {

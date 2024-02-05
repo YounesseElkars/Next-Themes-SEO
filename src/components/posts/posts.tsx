@@ -1,5 +1,5 @@
 import React from 'react';
-import PostCard from '../ui/postCard';
+import PostCard from '../ui/PostCard';
 import { TFeaturedArticlesCards, TFullPost } from '@/types/general';
 import { ShowArticlesCardsByCategory, getFeaturedArticlesCards } from '@/handlers/postsHandler';
 // import Image from 'next/image';

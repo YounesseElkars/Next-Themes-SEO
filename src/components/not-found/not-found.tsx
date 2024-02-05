@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { Button } from '../ui/button';
+import { Button } from '../ui/Button';
 import ExportedImage from 'next-image-export-optimizer';
 
 const NotFound = () => {

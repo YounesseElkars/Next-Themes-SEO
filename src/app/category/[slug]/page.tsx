@@ -1,4 +1,4 @@
-import { ArticlesByCategory } from '@/components/posts/posts';
+import { ArticlesByCategory } from '@/components/posts/Posts';
 import { getAllCategoriesCards } from '@/handlers/categoryHandler';
 import { Metadata, ResolvingMetadata } from 'next';
 import React from 'react';

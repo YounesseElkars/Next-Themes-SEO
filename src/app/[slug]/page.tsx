@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata, ResolvingMetadata } from 'next';
 import { fullArticleHandler, getAllArticles } from '@/handlers/postsHandler';
 import { TFullPost } from '@/types/general';
-import { FullArticle } from '@/components/posts/posts';
+import { FullArticle } from '@/components/posts/Posts';
 
 type params = { params: { slug: TFullPost['slug'] } };
 

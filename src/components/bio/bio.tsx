@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
-import SocialLink from './social-link';
-import AvatarBio from './avatar';
-import Divider from './divider';
+import SocialLink from './Social-link';
+import AvatarBio from './Avatar';
+import Divider from './Divider';
 import { profileSetting } from '@/config/profile';
 
 type BioProps = {};
