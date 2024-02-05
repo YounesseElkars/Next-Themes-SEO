@@ -2,7 +2,6 @@ import React from 'react';
 import PostCard from '../ui/PostCard';
 import { TFeaturedArticlesCards, TFullPost } from '@/types/general';
 import { ShowArticlesCardsByCategory, getFeaturedArticlesCards } from '@/handlers/postsHandler';
-// import Image from 'next/image';
 import { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Bitter } from 'next/font/google';
@@ -29,14 +28,14 @@ export const FeaturedArticlesCards = () => {
               i === 2 ? 'row-span-2' : ''
             } `}
           >
-          <PostCard
+            <PostCard
               key={i}
               title={postDetails[i].title}
               subtitle={postDetails[i].subtitle}
               slug={postDetails[i].slug}
               image={postDetails[i].image}
               imageAlt={postDetails[i].imageAlt}
-          />
+            />
           </div>
         ))}
       </div>
@@ -74,16 +73,16 @@ export const FullArticle: FC<TFullPost> = ({ title, subtitle, date, content, ima
       <ExportedImage src={image} height={1000} width={1000} className="w-full" alt={imageAlt} />
       <div className="flex justify-center">
         <article className="prose my-12   w-full  text-foreground dark:prose-light">
-        <ReactMarkdown
-          components={{
+          <ReactMarkdown
+            components={{
               img: ({ src, alt }) => (
                 <ExportedImage src={src as string} alt={alt as string} width={1200} height={200} />
               ),
-          }}
-        >
-          {content}
-        </ReactMarkdown>
-      </article>
+            }}
+          >
+            {content}
+          </ReactMarkdown>
+        </article>
       </div>
     </div>
   );
