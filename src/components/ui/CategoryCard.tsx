@@ -1,21 +1,21 @@
 import React, { FC } from 'react';
 import { TCategoryCard } from '@/types/general';
 import Link from 'next/link';
-// import Image from 'next/image';
 import ExportedImage from 'next-image-export-optimizer';
 
 const Category: FC<TCategoryCard> = ({ categoryImg, categoryImgAlt, categoryName, categorySlug }) => {
   return (
     <Link aria-label={categoryName + ' - Category'} href={`/category/` + categorySlug}>
-      <div className="relative h-auto w-72 transform rounded-md transition-transform hover:scale-105 focus:border-blue-300 focus:ring ">
+      <div className="relative h-full w-full transform rounded-md transition-transform hover:scale-105 focus:border-blue-300 focus:ring ">
+        <div className="absolute h-full w-full bg-slate-950/10"></div>
         <ExportedImage
           src={categoryImg}
           height="100"
           width="100"
           alt={categoryImgAlt}
-          className="h-48 w-full rounded-md"
+          className="h-full w-full object-cover"
         />
-        <div className="bg absolute bottom-2 left-2 cursor-pointer select-none  rounded-md bg-blue-900/80 p-2 text-slate-300 hover:text-slate-50 ">
+        <div className="absolute bottom-4 left-4 cursor-pointer select-none text-white hover:text-slate-50 ">
           <div className="text-base">{categoryName}</div>
         </div>
       </div>
