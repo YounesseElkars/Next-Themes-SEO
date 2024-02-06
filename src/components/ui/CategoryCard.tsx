@@ -10,13 +10,15 @@ const Category: FC<TCategoryCard> = ({ categoryImg, categoryImgAlt, categoryName
         <div className="absolute h-full w-full bg-slate-950/10"></div>
         <ExportedImage
           src={categoryImg}
-          height="100"
-          width="100"
+          height="1000"
+          width="1000"
           alt={categoryImgAlt}
           className="h-full w-full object-cover"
         />
-        <div className="absolute bottom-4 left-4 cursor-pointer select-none text-white hover:text-slate-50 ">
-          <div className="text-base">{categoryName}</div>
+        <div className="absolute bottom-0 left-0 w-full cursor-pointer select-none p-4 text-slate-50 ">
+          <div className="mb-3 text-xl underline decoration-primary decoration-1 underline-offset-4">
+            {categoryName}
+          </div>
         </div>
       </div>
     </Link>
