@@ -46,9 +46,9 @@ export const FeaturedArticlesCards = () => {
 export const ArticlesByCategory = ({ slug }: { slug: string }) => {
   const articles = ShowArticlesCardsByCategory(slug);
   return (
-    <>
-      <h2 className="my-8 text-4xl">{slug}</h2>
-      <div className="mt-4 grid h-auto w-full grid-cols-1 gap-10 rounded-md px-4 py-2 sm:grid-cols-2 sm:flex-row lg:grid-cols-4 ">
+    <section className="mt-20">
+      <h2 className="mb-20 text-6xl underline decoration-primary decoration-1 underline-offset-8 ">{slug}</h2>
+      <div className=" grid h-auto w-full grid-cols-1 gap-14 rounded-md px-4 py-2 sm:grid-cols-2 sm:flex-row lg:grid-cols-4 ">
         {articles.map((data, index) => (
           <PostCard
             key={index}
@@ -60,7 +60,7 @@ export const ArticlesByCategory = ({ slug }: { slug: string }) => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
