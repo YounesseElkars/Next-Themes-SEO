@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/Theme-provider';
 import Navbar from '@/components/navbar/Navbar';
 import Container from '@/components/ui/Container';
 import { profileSetting } from '@/config/profile';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Container>
                 <Navbar />
                 {children}
+                <Footer />
               </Container>
             </>
           )}
