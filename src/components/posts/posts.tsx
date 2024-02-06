@@ -25,21 +25,21 @@ export const FeaturedArticlesCards = () => {
       <div className="grid auto-rows-[200px] grid-cols-2 gap-14 md:grid-cols-3">
         {postDetails.slice(0, 6).map((_, i) => {
           return (
-          <div
-            key={i}
+            <div
+              key={i}
               className={`row-span-1 ${i === 3 || i === 5 ? 'col-span-1    md:col-span-2' : ''}    ${
                 i === 2 ? ' row-span-1 md:row-span-2 ' : ''
-            } `}
-          >
-            <PostCard
-              key={i}
-              title={postDetails[i].title}
-              subtitle={postDetails[i].subtitle}
-              slug={postDetails[i].slug}
-              image={postDetails[i].image}
-              imageAlt={postDetails[i].imageAlt}
-            />
-          </div>
+              } `}
+            >
+              <PostCard
+                key={i}
+                title={postDetails[i].title}
+                subtitle={postDetails[i].subtitle}
+                slug={postDetails[i].slug}
+                image={postDetails[i].image}
+                imageAlt={postDetails[i].imageAlt}
+              />
+            </div>
           );
         })}
       </div>
