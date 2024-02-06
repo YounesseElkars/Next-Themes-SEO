@@ -18,14 +18,17 @@ export const FeaturedArticlesCards = () => {
   const postDetails: TFeaturedArticlesCards[] = getFeaturedArticlesCards();
 
   return (
-    <>
-      <h2 className="my-8 text-4xl">Featured Articles</h2>
-      <div className="grid auto-rows-[200px] grid-cols-3">
-        {[...Array(6)].map((_, i) => (
+    <section className="mt-20">
+      <h2 className="mb-20 text-6xl underline decoration-primary decoration-1 underline-offset-8 ">
+        Featured Articles
+      </h2>
+      <div className="grid auto-rows-[200px] grid-cols-2 gap-14 md:grid-cols-3">
+        {postDetails.slice(0, 6).map((_, i) => {
+          return (
           <div
             key={i}
-            className={`row-span-1 rounded-xl p-4 ${i === 0 || i === 5 ? 'col-span-2' : ''}    ${
-              i === 2 ? 'row-span-2' : ''
+              className={`row-span-1 ${i === 3 || i === 5 ? 'col-span-1    md:col-span-2' : ''}    ${
+                i === 2 ? ' row-span-1 md:row-span-2 ' : ''
             } `}
           >
             <PostCard
@@ -37,9 +40,10 @@ export const FeaturedArticlesCards = () => {
               imageAlt={postDetails[i].imageAlt}
             />
           </div>
-        ))}
+          );
+        })}
       </div>
-    </>
+    </section>
   );
 };
 
