@@ -22,4 +22,4 @@ const Navbar: FC<NavbarProps> = ({}) => {
   );
 };
 
-export default Navbar;
+export { Navbar };

@@ -13,4 +13,4 @@ const Underconstruction = () => {
   );
 };
 
-export default Underconstruction;
+export { Underconstruction };

@@ -16,7 +16,7 @@ const AboutTheAuthor: FC<AboutTheAuthor> = () => {
           width={1000}
           src={profileSetting.avatar}
           alt={profileSetting.full_name}
-          className="h-full w-72 object-fill"
+          className="h-full w-72 object-fill shadow-md shadow-primary/50 drop-shadow-md"
         />
         <div className="mx-10 flex flex-col items-center justify-around">
           <div className="my-2 text-center text-lg font-semibold capitalize first-letter:text-xl first-letter:font-bold sm:w-10/12">

@@ -1,7 +1,6 @@
 'use client';
 import { TLinkPath } from '@/types/general';
 import React, { FC } from 'react';
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

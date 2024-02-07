@@ -1,9 +1,9 @@
 import React from 'react';
-import NavLink from '../navbar/NavLink';
+import NavLink from '../Navbar/NavLink';
 import { profileSetting } from '@/config/profile';
 import SocialLink from '../About/Social-link';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
-import CategoriesLinks from '../navbar/CategoriesLinks';
+import CategoriesLinks from '../Navbar/CategoriesLinks';
 
 const Footer = () => {
   const iconSize = 14;
@@ -41,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export { Footer };

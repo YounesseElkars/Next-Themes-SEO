@@ -1,5 +1,5 @@
 import React from 'react';
-import PostCard from '../ui/PostCard';
+import PostCard from '../Ui/PostCard';
 import { TFeaturedArticlesCards, TFullPost } from '@/types/general';
 import { ShowArticlesCardsByCategory, getFeaturedArticlesCards } from '@/handlers/postsHandler';
 import { FC } from 'react';
@@ -22,7 +22,7 @@ export const FeaturedArticlesCards = () => {
       <h2 className="mb-20 text-6xl underline decoration-primary decoration-1 underline-offset-8 ">
         Featured Articles
       </h2>
-      <div className="grid auto-rows-[200px] grid-cols-2 gap-14 md:grid-cols-3">
+      <div className="grid auto-rows-[200px] grid-cols-2 gap-5 md:grid-cols-3 md:gap-8 lg:gap-14">
         {postDetails.slice(0, 6).map((_, i) => {
           return (
             <div
@@ -51,7 +51,9 @@ export const ArticlesByCategory = ({ slug }: { slug: string }) => {
   const articles = ShowArticlesCardsByCategory(slug);
   return (
     <section className="mt-20">
-      <h2 className="mb-20 text-6xl underline decoration-primary decoration-1 underline-offset-8 ">{slug}</h2>
+      <h2 className="mb-20 break-words text-6xl underline decoration-primary decoration-1 underline-offset-8 ">
+        {slug}
+      </h2>
       <div className=" grid h-auto w-full grid-cols-1 gap-14 rounded-md px-4 py-2 sm:grid-cols-2 sm:flex-row lg:grid-cols-4 ">
         {articles.map((data, index) => (
           <PostCard
