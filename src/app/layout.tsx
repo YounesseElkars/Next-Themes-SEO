@@ -1,12 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Underconstruction from './underconstruction';
-import { ThemeProvider } from '@/components/Theme-provider';
-import Navbar from '@/components/navbar/Navbar';
-import Container from '@/components/ui/Container';
+import Theme from '@/themes/defaultTheme';
 import { profileSetting } from '@/config/profile';
-import Footer from '@/components/Footer/Footer';
+import { ThemeProvider } from '@/themes/Theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,14 +25,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {isUnderConstruction ? (
-            <Underconstruction />
+            <Theme.Underconstruction />
           ) : (
             <>
-              <Container>
-                <Navbar />
+              <Theme.Container>
+                <Theme.Navbar />
                 {children}
-                <Footer />
-              </Container>
+                <Theme.Footer />
+              </Theme.Container>
             </>
           )}
         </ThemeProvider>
