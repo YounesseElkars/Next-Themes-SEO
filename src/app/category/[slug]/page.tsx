@@ -1,7 +1,7 @@
-import { ArticlesByCategory } from '@/components/posts/Posts';
 import { getAllCategoriesCards } from '@/handlers/categoryHandler';
 import { Metadata, ResolvingMetadata } from 'next';
 import React from 'react';
+import Theme from '@/themes/defaultTheme';
 
 type params = { params: { slug: string } };
 
@@ -24,7 +24,7 @@ export const generateStaticParams = async () => {
 const page = ({ params }: params) => {
   const slug = params.slug;
 
-  return <ArticlesByCategory slug={slug} />;
+  return <Theme.ArticlesByCategory slug={slug} />;
 };
 
 export default page;

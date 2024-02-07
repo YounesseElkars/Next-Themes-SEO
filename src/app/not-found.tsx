@@ -1,9 +1,5 @@
-import NotFound from '@/components/not-found/Not-found';
+import Theme from '@/themes/defaultTheme';
 
 export default function Page() {
-  return (
-    <div>
-      <NotFound />
-    </div>
-  );
+  return <Theme.NotFound />;
 }

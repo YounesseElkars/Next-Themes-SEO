@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata, ResolvingMetadata } from 'next';
 import { fullArticleHandler, getAllArticles } from '@/handlers/postsHandler';
 import { TFullPost } from '@/types/general';
-import { FullArticle } from '@/components/posts/Posts';
+import Theme from '@/themes/defaultTheme';
 
 type params = { params: { slug: TFullPost['slug'] } };
 
@@ -34,7 +34,7 @@ const page = ({ params }: params) => {
 
   return (
     <div className="mt-4 h-auto w-full gap-4 px-4 py-2  sm:grid-cols-2  sm:flex-row lg:grid-cols-3">
-      <FullArticle
+      <Theme.FullArticle
         slug={content.slug}
         seoMetaDescription={content.seoMetaDescription}
         imageAlt={content.imageAlt}

@@ -1,11 +1,10 @@
-import { ShowAllCategoriesCards } from '@/components/categories/ShowAllCategoriesCards';
-import { FeaturedArticlesCards } from '@/components/posts/Posts';
+import Theme from '@/themes/defaultTheme';
 
 export default function Home() {
   return (
     <>
-      <FeaturedArticlesCards />
-      <ShowAllCategoriesCards />
+      <Theme.FeaturedArticlesCards />
+      <Theme.ShowAllCategoriesCards />
     </>
   );
 }

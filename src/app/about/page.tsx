@@ -1,13 +1,11 @@
-import AboutTheAuthor from '@/components/About/AboutTheAuthor';
-import QuoteAuthor from '@/components/About/QuoteAuthor';
-
+import Theme from '@/themes/defaultTheme';
 import React from 'react';
 
 const page = () => {
   return (
     <>
-      <AboutTheAuthor />
-      <QuoteAuthor />
+      <Theme.AboutTheAuthor />
+      <Theme.QuoteAuthor />
     </>
   );
 };
