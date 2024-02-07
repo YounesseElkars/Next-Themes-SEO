@@ -1,11 +1,11 @@
 export const profileSetting = {
-  full_name: 'Jessica Walker',
+  full_name: 'John Doe',
   blogName: 'Minimalist Blog',
   author_about:
-    "Hi im Jessica Walker , and im is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially ",
+    "Hi im John Doe , and im is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially ",
   quote:
     'Embrace the journey of continuous learning, for in every challenge lies an opportunity to grow and redefine your story .',
-  avatar: '/images/author.png',
+  avatar: '/images/author-6.jpg',
   facebook: 'https://facebook.com',
   instagram: 'https://instagram.com',
   twiter: 'https://twitter.com',
