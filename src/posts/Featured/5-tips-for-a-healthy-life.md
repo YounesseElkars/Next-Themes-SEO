@@ -1,9 +1,9 @@
 ---
-title: 'Post Example 1'
+title: '5 tips for a healthy life'
 subtitle: 'Post Example Description'
 date: '2024-01-01'
-image: '/images/Rectangle 5-1.png'
-imageAlt: 'camera image'
+image: '/images/health.jpg'
+imageAlt: 'health image'
 seoMetaDescription: 'If you are old enough to remember the analogue film camera era, chances are it is'
 ---
 

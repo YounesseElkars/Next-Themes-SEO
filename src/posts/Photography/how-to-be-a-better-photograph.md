@@ -1,6 +1,6 @@
 ---
-title: 'Post Example 5'
-subtitle: 'Post Example Description'
+title: 'How to be a better Photograph'
+subtitle: 'Photograph'
 date: '2024-01-01'
 image: '/images/camera3.jpeg'
 imageAlt: 'camera image'

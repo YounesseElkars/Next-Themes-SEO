@@ -1,5 +1,5 @@
 ---
-title: 'Post Example 3'
+title: 'Understand Photography'
 subtitle: 'Post Example Description'
 date: '2024-01-01'
 image: '/images/camera3.jpeg'
@@ -15,7 +15,7 @@ TLR cameras do things differently. As the name suggests, there is a second lens.
 
 ## Why shoot a Twin Lens Reflex Camera?
 
-With parallax and calibration to worry about, why would you use a TLR camera. Well, one nice feature is that you can shoot from waist height and get quite a different perspective. Vivian Maier is a photographer who used a TLR camera extensively and often shot surreptitiously from wait height. Check out some <a   aria-label="See Vivian Maier work at Huxley-Parlour" href="https://huxleyparlour.com/artists/vivian-maier/">Vivian Maier work on Huxley Parlour gallery website</a>. If you haven't heard of Vivian Maier before, the story of how her work was discovered is quite interesting, I recommend you read up &mdash; you will not be disappointed!
+With parallax and calibration to worry about, why would you use a TLR camera. Well, one nice feature is that you can shoot from waist height and get quite a different perspective. Vivian Maier is a photographer who used a TLR camera extensively and often shot surreptitiously from wait height. Check out some <a aria-label="See Vivian Maier work at Huxley-Parlour" href="https://huxleyparlour.com/artists/vivian-maier/">Vivian Maier work on Huxley Parlour gallery website</a>. If you haven't heard of Vivian Maier before, the story of how her work was discovered is quite interesting, I recommend you read up &mdash; you will not be disappointed!
 
 ## Top TLR Cameras
 
