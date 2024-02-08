@@ -1,3 +1,3 @@
-import * as Theme from './minimal';
+import * as Theme from './second';
 
 export default Theme;
