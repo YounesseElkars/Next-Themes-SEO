@@ -45,3 +45,6 @@ next-env.d.ts
 
 # unlighthouse
 .unlighthouse
+
+# app screens
+screens
