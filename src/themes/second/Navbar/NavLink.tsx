@@ -15,7 +15,7 @@ const NavLink: FC<TNavlink> = ({ label, link, type }) => {
   const removeLastSlashFromPath = pathname !== '/' ? pathname.slice(0, -1) : '/';
 
   return (
-    <li
+    <div
       className={`
        m-2 select-none list-none decoration-primary decoration-1 underline-offset-8 hover:underline
       ${removeLastSlashFromPath === link ? 'text-lg underline ' : ''} 
@@ -29,7 +29,7 @@ const NavLink: FC<TNavlink> = ({ label, link, type }) => {
       <Link aria-label={label} href={link}>
         {label}
       </Link>
-    </li>
+    </div>
   );
 };
 

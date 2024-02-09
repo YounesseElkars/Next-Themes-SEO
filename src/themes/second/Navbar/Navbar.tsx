@@ -9,7 +9,7 @@ type NavbarProps = {};
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <header className="mt-10">
-      <ul className="mb-2 flex w-full items-center justify-between">
+      <div className="mb-2 flex w-full items-center justify-between">
         <div>
           <NavLink label={profileSetting.blogName} link="/" type="title" />
         </div>
@@ -21,7 +21,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <div>
           <SwitchDark />
         </div>
-      </ul>
+      </div>
     </header>
   );
 };

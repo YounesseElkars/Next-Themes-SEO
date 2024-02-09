@@ -9,15 +9,15 @@ type NavbarProps = {};
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <header className="mt-10">
-      <ul className="mb-2 flex w-full items-center justify-between">
+      <div className="mb-2 flex w-full items-center justify-between">
         <NavLink label="About" link="/about" type="normal" />
         <NavLink label={profileSetting.blogName} link="/" type="title" />
         <SwitchDark />
-      </ul>
+      </div>
       <hr className="mb-2" />
-      <ul className="flex flex-auto flex-wrap items-center justify-center">
+      <div className="flex flex-auto flex-wrap items-center justify-center">
         <CategoriesLinks />
-      </ul>
+      </div>
     </header>
   );
 };

@@ -29,12 +29,12 @@ const AboutTheAuthor: FC<AboutTheAuthor> = () => {
       <div className="my-10 flex border-l-2 border-t-2 border-primary/50"></div>
       <div className="mx-10 flex flex-col justify-center space-y-10 ">
         <div className="self-center font-semibold -tracking-wider">Social</div>
-        <ul className="flex flex-row flex-wrap  justify-center gap-10 lg:flex-col">
+        <div className="flex flex-row flex-wrap  justify-center gap-10 lg:flex-col">
           <SocialLink link={profileSetting.facebook} size={iconSize} Logo={Facebook} name="Facebook" />
           <SocialLink link={profileSetting.instagram} size={iconSize} Logo={Instagram} name="Instagram" />
           <SocialLink link={profileSetting.twiter} size={iconSize} Logo={Twitter} name="Twitter" />
           <SocialLink link={profileSetting.linkedin} size={iconSize} Logo={Linkedin} name="Linkedin" />
-        </ul>
+        </div>
       </div>
     </div>
   );
