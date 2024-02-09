@@ -8,7 +8,7 @@ import CategoriesLinks from '../Navbar/CategoriesLinks';
 const Footer = () => {
   const iconSize = 14;
   return (
-    <footer className="mt-20 grid gap-10 bg-primary/10 py-5 md:grid-cols-12">
+    <footer className="mt-20 grid gap-10 bg-muted py-5 md:grid-cols-12">
       <div className="col-span-2  flex h-full w-full items-center justify-center">
         <NavLink label={profileSetting.blogName} link="/" type="title" />
       </div>
