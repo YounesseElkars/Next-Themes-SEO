@@ -13,7 +13,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <div>
           <NavLink label={profileSetting.blogName} link="/" type="title" />
         </div>
-        <div className="flex">
+        <div className="flex md:space-x-4">
           <NavLink label="Home" link="/" type="normal" />
           <CategoriesLinks />
           <NavLink label="About" link="/about" type="normal" />
