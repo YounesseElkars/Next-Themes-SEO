@@ -7,7 +7,7 @@ export const ShowAllCategoriesCards = () => {
   const categoriesCards = getAllCategoriesCards();
   return (
     <section className="mt-20">
-      <h2 className="mb-20 text-6xl underline decoration-primary decoration-1 underline-offset-8">All Categories</h2>
+      <h2 className="mb-10 text-2xl  underline decoration-primary decoration-1 underline-offset-8">All Categories</h2>
       <div className="grid auto-rows-[200px] grid-cols-2 gap-5 md:grid-cols-3 md:gap-8 lg:gap-14">
         {categoriesCards.map((_, i) => (
           <div
