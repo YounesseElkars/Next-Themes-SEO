@@ -125,7 +125,7 @@ npm run score
 
 ##### Deployment
 
-You can deploy this project for free into [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/)
+You can deploy this project for free into [Vercel](https://vercel.com/) , [Netlify](https://www.netlify.com/) or [Cloudflare Page](https://www.cloudflare.com/plans/developer-platform/) etc...
 
 ##### Deploying to aws/s3 & cloudfront
 
